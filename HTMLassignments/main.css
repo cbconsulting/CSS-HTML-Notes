@@ -1,0 +1,57 @@
+h1 {
+
+	color: rgba(0,200,100, 0.8);
+	border: 5px dashed rgb(255,100,80);
+}
+
+h4 {
+	
+	background: rgb(255,100,80);
+}
+body {
+	background: pink;
+}
+/*
+body {
+	background: url(http://www.psdgraphics.com/wp-content/uploads/2009/02/carbon-fiber-texture.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+Just rember #FF8000; RGB concept 
+Hexadecimal:
+0123456789abcdef
+
+color pick is where you will get the #ff8000;
+from to truely get color you are looking for.
+people will refer to this as base 16
+
+RGB will be base 10 
+
+RGBA transparency.color: rgba(11,99,150, .2);
+
+li {
+	color: green;
+}
+h4 {
+	color: purple;
+}
+h3 {
+	color: yellow;
+}*/
+
+/*
+
+		syntax
+
+	color: #FF8000;
+	border-color: purple;
+	border-width: 5px;
+	border-style: solid;
+			vs.
+	border: 5px solid purple;
+	same result......
+	
+
+	*/

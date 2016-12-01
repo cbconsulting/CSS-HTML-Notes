@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+<h1>Register</h1>
+
+<form>
+<!-- pay attention as this input name="" id="" type="" placeholder=""
+and the required is just so the box responds to inside placeholder logic -->
+<label for="first">First Name</label>
+<input name="first" id="first" type="text" placeholder="John" required>
+<label for="last">Last Name</label>
+<input name="last" id="last"type="text" placeholder="Smith" required>
+
+<!-- here comes the radio buttons  -->
+<div>
+<!-- Male -->
+<label for="male">Male</label>
+<input id="male" type="radio" name=gender" value="male">
+<!-- Female -->
+<label for="female">Female</label>
+<input id="female" type="radio" name=gender" value="female">
+<!-- other -->
+<label for="other">Other</label>
+<input id="other" type="radio" name=gender" value="other">
+</div>
+
+<div>
+<!-- geting crafty in sted of typing label for="" and attaching
+a id=""every time this is another way of implmenting same idea.
+ -->
+	<label>
+	Eamil:
+	<input name="email" type="email" placeholder="your email" required>
+	</label>
+<!-- pattern="" require title="" gives password lockdown  -->
+	<label>
+	Password:
+	<input name="password" type="password" pattern=".{5,10}" required title="Password">
+	</label>
+</div>
+
+<!-- Drop down menu. <select>-->
+<div>
+	<label>
+		Birthday:
+		<select name="month">
+			<option>Month</option>
+			<option>Jan</option>
+			<option>Feb</option>
+			<option>Mar</option>
+			<option>Apr</option>
+			<option>May</option>
+		</select>
+		<!-- Another Note here Whatever comes first in 
+		<option></option> line up will display first.
+		makes it easier to predict what will appear there.
+		-->
+		<select month="day">
+			<option>Day</option>
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>	
+		</select>
+
+		<select month="year">
+			<option>Year</option>
+			<option>1995</option>
+			<option>1996</option>
+			<option>1997</option>
+			<option>1998</option>
+			<option>1999</option>	
+		</select>
+	</label>
+</div>
+
+<!-- label with check box -->
+<div>
+	<label for="agreed">I agree to the terms and contitions:</label>
+	<input id="agreed" type="checkbox" name="agreed">
+</div>
+
+
+
+<input type="submit">
+</form>
+
+</body>
+</html>

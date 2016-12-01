@@ -1,0 +1,71 @@
+cory@DreamMachine MINGW64 /g/Thinkful/Projects/Resume (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working direc
+
+        deleted:    .gitattributes
+        deleted:    .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        challenge/
+        resum-1.0/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+cory@DreamMachine MINGW64 /g/Thinkful/Projects/Resume (master)
+$ rm -rf .git
+
+cory@DreamMachine MINGW64 /g/Thinkful/Projects/Resume
+$ git init
+Initialized empty Git repository in G:/Thinkful/Projects/Resume/.git/
+
+cory@DreamMachine MINGW64 /g/Thinkful/Projects/Resume (master)
+$ get status
+bash: get: command not found
+
+cory@DreamMachine MINGW64 /g/Thinkful/Projects/Resume (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        index.html
+        main.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+cory@DreamMachine MINGW64 /g/Thinkful/Projects/Resume (master)
+$ git add .
+
+cory@DreamMachine MINGW64 /g/Thinkful/Projects/Resume (master)
+$ git commit -m "Create html resume"
+[master (root-commit) c4c4823] Create html resume
+ 2 files changed, 33 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 main.css
+
+cory@DreamMachine MINGW64 /g/Thinkful/Projects/Resume (master)
+$ git remote add origin https://github.com/truepalyer6/resume-html.git
+
+cory@DreamMachine MINGW64 /g/Thinkful/Projects/Resume (master)
+$ git push -u origin master
+Counting objects: 4, done.
+Delta compression using up to 12 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.01 KiB | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/truepalyer6/resume-html.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+cory@DreamMachine MINGW64 /g/Thinkful/Projects/Resume (master)
+$ ^C
+
+cory@DreamMachine MINGW64 /g/Thinkful/Projects/Resume (master)
